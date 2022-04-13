@@ -2,8 +2,7 @@ package br.com.tiyoda.hackerrank
 
 import java.text.DateFormat
 import java.text.SimpleDateFormat
-import java.util.*
-
+import java.util.Date
 
 fun timeConversion(s: String): String {
     val df: DateFormat = SimpleDateFormat("hh:mm:ssa")
@@ -12,7 +11,7 @@ fun timeConversion(s: String): String {
     return out.format(date)
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val s = readLine()!!
 
     val result = timeConversion(s)

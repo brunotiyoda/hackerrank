@@ -1,4 +1,4 @@
-package br.com.tiyoda.hackerrank
+package br.com.tiyoda.hackerrank.medium
 
 fun climbingLeaderboard(ranked: Array<Int>, player: Array<Int>): IntArray {
     val set = ranked.toSet()
@@ -11,7 +11,7 @@ fun climbingLeaderboard(ranked: Array<Int>, player: Array<Int>): IntArray {
 
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val rankedCount = readLine()!!.trim().toInt()
 
     val ranked = readLine()!!.trimEnd().split(" ").map { it.toInt() }.toTypedArray()

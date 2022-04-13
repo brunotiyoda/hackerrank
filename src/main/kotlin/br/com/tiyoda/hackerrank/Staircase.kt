@@ -1,7 +1,6 @@
 package br.com.tiyoda.hackerrank
 
 fun staircase(n: Int): Unit {
-    // Write your code here
     val builder = StringBuilder()
     for (i in 0 until n) builder.append(" ")
 
@@ -11,7 +10,7 @@ fun staircase(n: Int): Unit {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val n = readLine()!!.trim().toInt()
 
     staircase(n)

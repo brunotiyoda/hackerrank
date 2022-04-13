@@ -1,9 +1,9 @@
 package br.com.tiyoda.hackerrank
 
 fun plusMinus(arr: Array<Int>): Unit {
-    val negatives = arr.filter { it < 0 }.count()
-    val positives = arr.filter { it > 0 }.count()
-    val equalsZero = arr.filter { it == 0 }.count()
+    val positives = arr.count { it > 0 }
+    val negatives = arr.count { it < 0 }
+    val equalsZero = arr.count { it == 0 }
 
     val arraySize = arr.size
 
@@ -13,7 +13,7 @@ fun plusMinus(arr: Array<Int>): Unit {
 
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val n = readLine()!!.trim().toInt()
 
     val arr = readLine()!!.trimEnd().split(" ").map { it.toInt() }.toTypedArray()
